@@ -26,7 +26,7 @@ You can run this app inside a **virtual environment** (recommended) or directly 
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/aabbas77-web/Python/01_show_webcam.git
+git clone https://github.com/aabbas77-web/Python/tree/main/01_show_webcam.git
 cd 01_show_webcam
 ```
 
