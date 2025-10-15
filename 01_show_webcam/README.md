@@ -26,8 +26,8 @@ You can run this app inside a **virtual environment** (recommended) or directly 
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/<your-username>/simple-webcam-viewer.git
-cd simple-webcam-viewer
+git clone https://github.com/aabbas77-web/Python/01_show_webcam.git
+cd 01_show_webcam
 ```
 
 ### 2. (Optional) Create and activate a virtual environment
@@ -54,7 +54,7 @@ pip install opencv-python
 Simply run the main Python script:
 
 ```bash
-python webcam_app.py
+python show_webcam.py
 ```
 
 You should see a window showing your webcam feed in grayscale.  
@@ -67,7 +67,7 @@ Press **`q`** at any time to close the window and exit the program.
 ```
 simple-webcam-viewer/
 │
-├── webcam_app.py       # Main script to open webcam and display frames
+├── show_webcam.py       # Main script to open webcam and display frames
 └── README.md           # Documentation
 ```
 
