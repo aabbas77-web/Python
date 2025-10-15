@@ -65,7 +65,7 @@ Press **`q`** at any time to close the window and exit the program.
 ## 🧩 File Structure
 
 ```
-simple-webcam-viewer/
+01_show_webcam/
 │
 ├── show_webcam.py       # Main script to open webcam and display frames
 └── README.md           # Documentation

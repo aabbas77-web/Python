@@ -33,8 +33,8 @@ pip install opencv-python
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/<your-username>/enhanced-webcam-viewer.git
-cd enhanced-webcam-viewer
+git clone https://github.com/aabbas77-web/Python.git
+cd 02_enhanced_webcam
 ```
 
 2. (Optional) Create and activate a virtual environment:
@@ -73,7 +73,7 @@ You will see a window titled **“Enhanced Webcam”** with your live webcam fee
 ## 🧩 File Structure
 
 ```
-enhanced-webcam-viewer/
+02_enhanced_webcam/
 │
 ├── enhanced_webcam.py    # Main script
 ├── README.md             # Documentation
