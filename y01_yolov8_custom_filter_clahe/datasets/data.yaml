@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['bus', 'cars', 'motorcycle', 'tricycle']
+
+roboflow:
+  workspace: labelling-active-learning
+  project: vehicle-detection-dsbie
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/labelling-active-learning/vehicle-detection-dsbie/dataset/1

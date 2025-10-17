@@ -1,17 +1,17 @@
-# train_with_filter.py
-# Training script that uses the FilteredDataset to apply CLAHE preprocessing
-# without modifying ultralytics source code.
 from ultralytics import YOLO
-from filtered_dataset import FilteredDataset
+from ultralytics.data.dataset import YOLODataset
+from custom_filters import custom_pipeline
+import cv2
 
-# Choose the YOLOv8 base model. Change to yolov8s.pt / yolov8m.pt etc as needed.
-model = YOLO('yolov8n.pt')
+class FilteredDataset(YOLODataset):
+    def load_image(self, i):
+        img, info = super().load_image(i)
+        img = custom_pipeline(img)
+        return img, info
 
-model.train(
-    data='data.yaml',             # Path to your dataset config
-    epochs=50,
-    imgsz=640,
-    batch=16,
-    dataset_class=FilteredDataset,  # Custom dataset class with filters
-    name='train_with_clahe'
-)
+# Patch YOLO’s dataset loader
+YOLODataset = FilteredDataset
+
+# Now train
+model = YOLO("yolov8n.pt")
+model.train(data="./datasets/data.yaml", epochs=50, imgsz=640)

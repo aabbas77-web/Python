@@ -1,0 +1,7 @@
+# data.yaml - example configuration; modify paths and classes to match your dataset
+train: ./datasets/images/train
+val: ./datasets/images/val
+
+# number of classes
+nc: 1
+names: ['object']
